@@ -5,8 +5,8 @@ from src.cnnClassifier.entity.config import DataIngestionConfig
 from src.cnnClassifier.config.configuration import ConfigurationManager
 from src.cnnClassifier.components.data_ingestion_01 import DataIngestion
 from src.cnnClassifier.pipeline.data_ingestion import DataIngestionTrainingPipeline
-from src.cnnClassifier.entity.config import PrepareBaseModelConfig
 from src.cnnClassifier.pipeline.prepare_base_model_02 import PrepareBaseModelTrainingPipeline
+from src.cnnClassifier.pipeline.model_training import ModelTrainingPipeline
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -30,3 +30,16 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
+STAGE_NAME = "Training"
+try: 
+   logger.info(f"*******************")
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   model_trainer = ModelTrainingPipeline()
+   model_trainer.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
