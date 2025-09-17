@@ -456,3 +456,72 @@ x==========x]
 [2025-09-17 15:20:30,364: INFO: data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2025-09-17 15:37:21,091: INFO: data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-17 15:37:21,091: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-09-17 15:37:21,110: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-09-17 15:37:21,110: INFO: comman: created directory at: artifacts]
+[2025-09-17 15:37:21,110: INFO: comman: created directory at: artifacts/data_ingestion]
+[2025-09-17 15:37:21,110: INFO: data_ingestion_01: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-09-17 15:38:59,506: INFO: data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-17 15:38:59,506: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-09-17 15:38:59,506: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-09-17 15:38:59,522: INFO: comman: created directory at: artifacts]
+[2025-09-17 15:38:59,522: INFO: comman: created directory at: artifacts/data_ingestion]
+[2025-09-17 15:38:59,522: INFO: data_ingestion_01: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-09-17 15:39:12,401: INFO: data_ingestion_01: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-09-17 15:39:14,298: INFO: data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-09-17 15:54:12,714: INFO: data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-17 15:54:12,721: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-09-17 15:54:12,730: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-09-17 15:54:12,734: INFO: comman: created directory at: artifacts]
+[2025-09-17 15:54:12,737: INFO: comman: created directory at: artifacts/data_ingestion]
+[2025-09-17 15:54:12,741: INFO: data_ingestion_01: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-09-17 15:54:26,908: INFO: data_ingestion_01: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-09-17 15:54:28,409: INFO: data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-09-17 15:57:15,833: INFO: data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-09-17 15:57:15,839: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-09-17 15:57:15,846: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-09-17 15:57:15,847: INFO: comman: created directory at: artifacts]
+[2025-09-17 15:57:15,847: INFO: comman: created directory at: artifacts/data_ingestion]
+[2025-09-17 15:57:15,849: INFO: data_ingestion_01: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-09-17 15:57:30,169: INFO: data_ingestion_01: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-09-17 15:57:33,032: INFO: data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-09-17 16:15:58,524: INFO: prepare_base_model_02: *******************]
+[2025-09-17 16:15:58,525: INFO: prepare_base_model_02: >>>>>> stage Prepare base model started <<<<<<]
+[2025-09-17 16:15:58,535: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-09-17 16:15:58,539: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-09-17 16:15:58,540: INFO: comman: created directory at: artifacts]
+[2025-09-17 16:15:58,541: INFO: comman: created directory at: artifacts/prepare_base_model]
+[2025-09-17 16:16:00,681: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-09-17 16:16:01,081: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-09-17 16:16:01,287: INFO: prepare_base_model_02: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-09-17 16:16:26,504: INFO: model_training: *******************]
+[2025-09-17 16:16:26,504: INFO: model_training: >>>>>> stage Training started <<<<<<]
+[2025-09-17 16:16:26,520: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-09-17 16:16:26,520: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-09-17 16:16:26,520: INFO: comman: created directory at: artifacts]
+[2025-09-17 16:16:26,520: INFO: comman: created directory at: artifacts\training]
+[2025-09-17 16:16:27,558: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-09-17 16:18:20,606: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-09-17 16:18:20,840: INFO: model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-09-17 16:18:49,528: INFO: model_eval: *******************]
+[2025-09-17 16:18:49,528: INFO: model_eval: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-09-17 16:18:49,543: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-09-17 16:18:49,543: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-09-17 16:18:49,543: INFO: comman: created directory at: artifacts]
+[2025-09-17 16:18:52,824: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-09-17 16:20:00,199: INFO: comman: json file saved at: scores.json]
+[2025-09-17 16:20:00,199: INFO: comman: json file saved at: scores.json]
+[2025-09-17 16:21:55,965: INFO: model_eval: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]

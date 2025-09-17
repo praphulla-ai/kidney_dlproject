@@ -5,7 +5,7 @@ from src.cnnClassifier.entity.config import DataIngestionConfig
 from src.cnnClassifier.config.configuration import ConfigurationManager
 from src.cnnClassifier.components.data_ingestion_01 import DataIngestion
 from src.cnnClassifier.pipeline.data_ingestion import DataIngestionTrainingPipeline
-from src.cnnClassifier.pipeline.prepare_base_model_02 import PrepareBaseModelTrainingPipeline
+from cnnClassifier.pipeline.prepare_base_model_02 import PrepareBaseModelTrainingPipeline
 from src.cnnClassifier.pipeline.model_training import ModelTrainingPipeline
 from src.cnnClassifier.pipeline.model_eval import EvaluationPipeline   
 
