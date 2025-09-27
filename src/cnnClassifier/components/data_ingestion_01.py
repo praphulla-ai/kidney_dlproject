@@ -1,44 +1,36 @@
-import os 
-import zipfile
-import gdown
+import sys 
+import os
+sys.path.append(os.getcwd())
+
+
 from src.cnnClassifier import logger
 from src.cnnClassifier.utils.comman import get_size
 from src.cnnClassifier.entity.config import DataIngestionConfig
+from src.cnnClassifier.config.configuration import ConfigurationManager
+from src.cnnClassifier.components.data_ingestion_01 import DataIngestion
+ 
+STAGE_NAME = "Data Ingestion stage"
 
-class DataIngestion:
-    def __init__(self, config: DataIngestionConfig):
-        self.config = config
 
-    
-    def download_file(self)-> str:
-        '''
-        Fetch data from the url
-        '''
+class DataIngestionTrainingPipeline:
+    def __init__(self):
+        pass
 
-        try: 
-            dataset_url = self.config.source_URL
-            zip_download_dir = self.config.local_data_file
-            os.makedirs("artifacts/data_ingestion", exist_ok=True)
-            logger.info(f"Downloading data from {dataset_url} into file {zip_download_dir}")
+    def main(self):
+        config = ConfigurationManager()
+        data_ingestion_config = config.get_data_ingestion_config()
+        data_ingestion = DataIngestion(config=data_ingestion_config)
+        data_ingestion.download_file()
+        data_ingestion.extract_zip_file()
 
-            file_id = dataset_url.split("/")[-2]
-            prefix = 'https://drive.google.com/uc?/export=download&id='
-            gdown.download(prefix+file_id,zip_download_dir)
 
-            logger.info(f"Downloaded data from {dataset_url} into file {zip_download_dir}")
 
-        except Exception as e:
-            raise e
-        
-    
-
-    def extract_zip_file(self):
-        """
-        zip_file_path: str
-        Extracts the zip file into the data directory
-        Function returns None
-        """
-        unzip_path = self.config.unzip_dir
-        os.makedirs(unzip_path, exist_ok=True)
-        with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
-            zip_ref.extractall(unzip_path)
+if __name__ == '__main__':
+    try:
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        obj = DataIngestionTrainingPipeline()
+        obj.main()
+        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+    except Exception as e:
+        logger.exception(e)
+        raise e
