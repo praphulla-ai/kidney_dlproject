@@ -105,3 +105,4 @@ pip install -r requirements.txt
 
     ECR_REPOSITORY_NAME = simple-app
 
+
