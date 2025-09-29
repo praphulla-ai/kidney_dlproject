@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
     
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI:170533023526.dkr.ecr.ap-south-1.amazonaws.com/kidneyrepo
+    - Save the URI:381439972988.dkr.ecr.ap-south-1.amazonaws.com/kidneyrepo
 
     
 ## 4. Create EC2 machine (Ubuntu) 
