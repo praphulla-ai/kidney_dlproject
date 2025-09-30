@@ -92,7 +92,7 @@ pip install -r requirements.txt
 # 6. Configure EC2 as self-hosted runner:
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
 
-
+  
 # 7. Setup github secrets:
 
     AWS_ACCESS_KEY_ID= 
