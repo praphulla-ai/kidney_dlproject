@@ -906,3 +906,36 @@ x==========x]
 [2025-09-27 10:09:06,894: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2025-09-27 10:09:09,444: WARNING: polymorphic_function: 6 out of the last 6 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x00000137129456C0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
 [2025-09-27 10:09:09,514: INFO: _internal: 127.0.0.1 - - [27/Sep/2025 10:09:09] "POST /predict HTTP/1.1" 200 -]
+[2025-09-30 11:06:56,083: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.142.194:8080]
+[2025-09-30 11:06:56,085: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-09-30 11:06:56,089: INFO: _internal:  * Restarting with stat]
+[2025-09-30 11:07:16,605: WARNING: _internal:  * Debugger is active!]
+[2025-09-30 11:07:16,613: INFO: _internal:  * Debugger PIN: 360-647-685]
+[2025-09-30 11:07:19,535: INFO: _internal: 127.0.0.1 - - [30/Sep/2025 11:07:19] "GET / HTTP/1.1" 200 -]
+[2025-09-30 11:07:41,178: INFO: _internal: 127.0.0.1 - - [30/Sep/2025 11:07:41] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-09-30 11:14:16,735: INFO: _internal:  * Detected change in 'c:\\mydlproject\\kidney_dlproject\\src\\cnnClassifier\\pipeline\\prediction.py', reloading]
+[2025-09-30 11:14:19,237: INFO: _internal:  * Restarting with stat]
+[2025-09-30 11:15:05,002: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.142.194:8080]
+[2025-09-30 11:15:05,003: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-09-30 11:15:05,008: INFO: _internal:  * Restarting with stat]
+[2025-09-30 11:15:23,961: WARNING: _internal:  * Debugger is active!]
+[2025-09-30 11:15:23,961: INFO: _internal:  * Debugger PIN: 360-647-685]
+[2025-09-30 11:15:25,519: INFO: _internal: 127.0.0.1 - - [30/Sep/2025 11:15:25] "GET / HTTP/1.1" 200 -]
+[2025-09-30 11:15:33,161: INFO: _internal: 127.0.0.1 - - [30/Sep/2025 11:15:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-09-30 12:50:00,383: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.142.194:8080]
+[2025-09-30 12:50:00,384: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-09-30 12:50:00,391: INFO: _internal:  * Restarting with stat]
+[2025-09-30 12:50:25,761: WARNING: _internal:  * Debugger is active!]
+[2025-09-30 12:50:25,767: INFO: _internal:  * Debugger PIN: 360-647-685]
+[2025-09-30 12:50:27,339: INFO: _internal: 127.0.0.1 - - [30/Sep/2025 12:50:27] "GET / HTTP/1.1" 200 -]
+[2025-09-30 12:50:41,514: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-09-30 12:50:44,296: INFO: _internal: 127.0.0.1 - - [30/Sep/2025 12:50:44] "POST /predict HTTP/1.1" 200 -]
